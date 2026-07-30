@@ -1,0 +1,142 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════════════════
+   NS Estetica — Global Styles
+   Luxo discreto · Elegância · Precisão estética
+   ═══════════════════════════════════════════════════════ */
+
+@layer base {
+  :root {
+    /* ── Color Tokens ── */
+    --color-cream: #FAF8F5;
+    --color-off-white: #F8F6F3;
+    --color-ivory: #FFFFF0;
+    --color-beige: #F5F0EB;
+    --color-taupe: #D9D0C3;
+    --color-gray-light: #E8E5E1;
+    --color-gray-warm: #D4CFC8;
+    --color-gold: #D4AF6C;
+    --color-gold-light: #E8D5A8;
+    --color-gold-dark: #B8954E;
+    --color-graphite: #2C2C2C;
+    --color-dark-soft: #1A1A1A;
+
+    /* ── Feedback Colors ── */
+    --color-success: #7EBF8E;
+    --color-warning: #E0C080;
+    --color-danger: #D4998A;
+    --color-info: #8AB8D4;
+
+    /* ── Typography ── */
+    --font-heading: "Cormorant Garamond", Georgia, serif;
+    --font-body: "Inter", system-ui, sans-serif;
+
+    /* ── Spacing ── */
+    --spacing-section: 6rem;
+
+    /* ── Shadows ── */
+    --shadow-card: 0 4px 8px rgba(44, 44, 44, 0.05), 0 2px 4px rgba(44, 44, 44, 0.03);
+    --shadow-lg: 0 10px 20px rgba(44, 44, 44, 0.05), 0 4px 8px rgba(44, 44, 44, 0.03);
+
+    /* ── Radius ── */
+    --radius-button: 14px;
+    --radius-card: 20px;
+    --radius-image: 24px;
+  }
+
+  * {
+    border-color: rgba(217, 208, 195, 0.2);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-[var(--color-cream)] text-[var(--color-graphite)] font-body;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  /* ── Selection ── */
+  ::selection {
+    background-color: var(--color-gold);
+    color: var(--color-dark-soft);
+  }
+
+  /* ── Focus Ring ── */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-[var(--color-gold)] ring-offset-2 ring-offset-[var(--color-cream)];
+  }
+}
+
+@layer components {
+  /* ── Container ── */
+  .container-ns {
+    @apply mx-auto w-full max-w-[1280px] px-5 sm:px-6 md:px-8;
+  }
+
+  /* ── Section ── */
+  .section-ns {
+    @apply py-16 md:py-24 lg:py-28;
+  }
+
+  /* ── Glass Effect ── */
+  .glass {
+    background-color: rgba(250, 248, 245, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  .glass-strong {
+    background-color: rgba(250, 248, 245, 0.92);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+
+  /* ── Gold Accent Line ── */
+  .accent-line {
+    @apply h-px w-12 bg-[var(--color-gold)]/40;
+  }
+
+  /* ── Decorative Glow ── */
+  .glow-gold {
+    background: radial-gradient(
+      ellipse 50% 40% at 50% 50%,
+      rgba(212, 175, 108, 0.08) 0%,
+      transparent 70%
+    );
+  }
+
+  .glow-soft {
+    background: radial-gradient(
+      ellipse 60% 40% at 50% 0%,
+      rgba(212, 175, 108, 0.05) 0%,
+      transparent 60%
+    );
+  }
+}
+
+@layer utilities {
+  /* ── Text Balance ── */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* ── Hide scrollbar ── */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* ── Gold text ── */
+  .text-gold {
+    color: var(--color-gold);
+  }
+}

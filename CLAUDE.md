@@ -1,13 +1,74 @@
-# MazyOS — Sistema operacional do negócio
+# NS Estetica — MazyOS
 
-Sua empresa roda em cima desse arquivo. Aqui ficam as regras de operação
-do MazyOS — como o Claude lê o contexto, aprende com correções, mantém
-tudo atualizado e cria skills novas conforme a operação evolui.
+> Sua empresa roda em cima desse arquivo. Aqui ficam as regras de operação
+> do MazyOS — como o Claude lê o contexto, aprende com correções, mantém
+> tudo atualizado e cria skills novas conforme a operação evolui.
+>
+> Molde aplicado: **freelancer**. A operação gira em torno de atender
+> clientes, produzir conteúdo e manter a presença digital da clínica.
 
-Esse arquivo é editável. Quando o `/instalar` rodar, ele complementa o
-final dessa página com as regras específicas do seu negócio.
+## O que é esse workspace
 
----
+Operação da NS Estetica — clínica de estética avançada da Dra. Naiara Soares.
+Aqui ficam a identidade da marca, os conteúdos digitais, os materiais de
+marketing e a organização do negócio.
+
+**Estrutura de pastas:**
+- `_memoria/` — contexto do negócio, tom de voz, foco atual
+- `identidade/` — marca, cores, fontes, logo
+- `clientes/` — registros e atendimentos
+- `marketing/` — conteúdos (Instagram, carrosséis, posts)
+- `saidas/` — emails, documentos pontuais
+- `dados/` — arquivos a analisar
+- `tarefas.md` — pipeline, prazos, próximos passos
+
+## Quem sou
+
+Sou NS Estetica — Dra. Naiara Soares, Biomédica Esteta (CRBM 13651).
+Especializada em Harmonização Facial, Estética Avançada e Procedimentos
+Minimamente Invasivos. Atendo em Itaúna - MG e Rio Manso - MG.
+
+## Meu serviço
+
+- Harmonização Facial
+- Estética Avançada
+- Procedimentos Minimamente Invasivos
+- Método FaceLeve — resultados naturais guiados por precisão estética
+
+## Como trabalho
+
+Toco sozinha. O fluxo principal é: atender pacientes presenciais nas duas
+unidades + produzir conteúdo digital para Instagram (posts, carrosséis,
+stories). O gargalo atual é tempo para criar esse conteúdo de forma
+consistente.
+
+## Tom de voz
+
+Elegante, profissional e direto. Transmite segurança sem ser rebuscado.
+Ênfase em personalização e cuidado individual. Tom de consulta, não de
+anúncio.
+
+Evitar: jargão de guru, "vamos juntas", "sinergia", "transformação"
+genérico, tom de SPA ou salão de beleza.
+
+## Regras do sistema
+
+- Conteúdo novo para Instagram → criar em `marketing/conteudos/`
+- Carrosséis seguem skill `carrossel` — formato Instagram 1080x1350 (4:5)
+- Design visual segue `identidade/design-guide.md` e `DESIGN_SYSTEM.md`
+- Ao concluir tarefa repetível, perguntar se vira skill
+
+## Skills instaladas
+
+- `carrossel` — posts de carrossel no estilo MazyOS
+- `publicar-tema` — pesquisa, roteiro e criação completa de post
+- `aprovar-post` — publica da fila pro site + Instagram/Facebook
+- `seo` — otimização SEO
+- `anuncio-google` — campanhas Google Ads
+- `analisar-dados` — análise de planilhas exportadas
+- `relatorio-ads` — relatório de performance de anúncios
+- `email-profissional` — emails formais
+- `responder-avaliacoes` — respostas a avaliações online
 
 ## Contexto do negócio
 
@@ -48,7 +109,7 @@ padrão de repetição for claro.
 
 ## Aprender com correções
 
-Quando o usuário corrigir algo, melhorar uma resposta ou dar uma
+Quando o usuário corrigir algo, melhorar uma resposta ou der uma
 instrução que parece permanente (frases como "na verdade é assim", "não
 faça mais isso", "prefiro assim", "sempre que...", "evita...", "da
 próxima vez..."), perguntar:
@@ -113,3 +174,10 @@ Quando o usuário pedir skill nova:
 4. Se a skill precisar de arquivos de apoio (templates, exemplos),
    criar dentro da pasta da skill
 5. Seguir o fluxo da skill-creator nativa do Claude Code
+
+## Ferramentas conectadas
+
+- [ ] Meta Business (Instagram + Facebook)
+- [ ] Google Ads
+- [ ] Gmail
+- [ ] Calendly / agenda
