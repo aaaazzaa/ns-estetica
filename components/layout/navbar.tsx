@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState, useEffect } from "react"
+import Image from "next/image"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -62,16 +63,17 @@ export function Navbar() {
         {/* ── Logo ── */}
         <a
           href="#hero"
-          className="relative z-10 flex items-center gap-2"
+          className="relative z-10 flex items-center"
           aria-label="NS Estetica — Início"
         >
-          <span className="font-heading text-xl md:text-2xl font-light tracking-tight text-[var(--color-graphite)]">
-            NS
-          </span>
-          <span className="hidden h-5 w-px bg-[var(--color-taupe)]/40 sm:block" />
-          <span className="hidden font-body text-caption text-[var(--color-graphite)]/60 sm:block">
-            Estética
-          </span>
+          <Image
+            src="/assets/img/logo.png"
+            alt="Logo NS Estetica — Dra. Naiara Soares"
+            width={48}
+            height={48}
+            className="h-9 w-auto md:h-12 object-contain"
+            priority
+          />
         </a>
 
         {/* ── Desktop Links ── */}

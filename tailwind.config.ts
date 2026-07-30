@@ -9,11 +9,11 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          cream: "#FAF8F5",
-          "off-white": "#F8F6F3",
+          cream: "#F2E8E0",
+          "off-white": "#F9F2EC",
           ivory: "#FFFFF0",
-          beige: "#F5F0EB",
-          taupe: "#D9D0C3",
+          beige: "#EDE0D6",
+          taupe: "#D4C4B8",
           "gray-light": "#E8E5E1",
           "gray-warm": "#D4CFC8",
           gold: "#D4AF6C",

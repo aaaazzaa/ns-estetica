@@ -10,11 +10,11 @@
 @layer base {
   :root {
     /* ── Color Tokens ── */
-    --color-cream: #FAF8F5;
-    --color-off-white: #F8F6F3;
+    --color-cream: #F2E8E0;
+    --color-off-white: #F9F2EC;
     --color-ivory: #FFFFF0;
-    --color-beige: #F5F0EB;
-    --color-taupe: #D9D0C3;
+    --color-beige: #EDE0D6;
+    --color-taupe: #D4C4B8;
     --color-gray-light: #E8E5E1;
     --color-gray-warm: #D4CFC8;
     --color-gold: #D4AF6C;
@@ -47,7 +47,7 @@
   }
 
   * {
-    border-color: rgba(217, 208, 195, 0.2);
+    border-color: rgba(212, 196, 184, 0.2);
   }
 
   html {

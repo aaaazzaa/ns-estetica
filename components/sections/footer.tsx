@@ -1,6 +1,7 @@
 "use client"
 
 import React from "react"
+import Image from "next/image"
 import { motion } from "framer-motion"
 import {
   Instagram,
@@ -122,12 +123,13 @@ export function FooterSection() {
             className="flex flex-col gap-5 sm:col-span-2 lg:col-span-1"
           >
             <div>
-              <span className="font-heading text-h3 font-light tracking-tight text-white">
-                NS
-              </span>
-              <span className="ml-2 font-body text-small text-white/40">
-                Estética
-              </span>
+              <Image
+                src="/assets/img/logo.png"
+                alt="Logo NS Estetica — Dra. Naiara Soares"
+                width={56}
+                height={56}
+                className="h-11 w-auto md:h-14 object-contain"
+              />
             </div>
 
             <p className="font-body text-small leading-relaxed text-white/45 max-w-xs">

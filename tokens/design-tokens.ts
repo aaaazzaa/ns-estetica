@@ -5,7 +5,7 @@
 
 export const colors = {
   brand: {
-    cream: "#FAF8F5",
+    cream: "#F2E8E0",
     offWhite: "#F8F6F3",
     ivory: "#FFFFF0",
     beige: "#F5F0EB",
